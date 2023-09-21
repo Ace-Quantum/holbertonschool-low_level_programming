@@ -21,3 +21,4 @@ int main(void)
 	printf("Size of long double: %zu byte(s)\n", sizeof(long double));
 
 	return (0);
+}
