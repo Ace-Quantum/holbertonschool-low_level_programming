@@ -1,4 +1,2 @@
 #!/usr/bin/env bash
-#A script to run a C file through a preprocessor.
-
 GCC -i $CFILE -o c
