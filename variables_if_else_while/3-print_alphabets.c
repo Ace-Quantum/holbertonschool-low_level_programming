@@ -11,14 +11,12 @@
 int main(void)
 {
 	char letter = 'a';
-
+	char better = 'A';
 	while (letter <= 'z')
 	{
 		putchar(letter);
 		letter++;
 	}
-
-	char better = 'A';
 
 	while (better <= 'Z')
 	{
