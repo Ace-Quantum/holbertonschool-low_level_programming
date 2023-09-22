@@ -4,7 +4,7 @@
 /**
  * main - entry point of the program
  *
- * Return: returns a 0 upon request
+ * eturn: returns a 0 upon request
  */
 int main(void)
 {
