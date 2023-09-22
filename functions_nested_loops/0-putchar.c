@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - Where the program starts
+ * main - Where the program starts
  *
  * Return: return a 0 upon proper execution
  *
