@@ -8,7 +8,7 @@
  * Description: prints out "_putchar"
  */
 
-int _putchar(void)
+int main(void)
 {
 	char c[8] = "_putchar";
 
