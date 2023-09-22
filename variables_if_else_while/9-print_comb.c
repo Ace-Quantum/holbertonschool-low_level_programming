@@ -11,15 +11,15 @@
 int main(void)
 {
 	int letter = '0';
-	char comma = ',';
-	char space = ' ';
-
 
 	while (letter <= '9')
 	{
 		putchar(letter);
-		putchar(comma);
-		putchar(space);
+		if (letter != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		letter++;
 	}
 
