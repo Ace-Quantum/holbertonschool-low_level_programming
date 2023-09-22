@@ -1,0 +1,4 @@
+2-print_alphabet.c:11: ERROR: open brace '{' following function declarations go on the next line
+2-print_alphabet.c:12: WARNING: space prohibited before semicolon
+2-print_alphabet.c:13: ERROR: trailing whitespace
+2-print_alphabet.c:14: ERROR: trailing whitespace
