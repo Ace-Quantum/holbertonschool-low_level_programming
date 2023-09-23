@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_alphabet_X10 - Program start
+ * print_alphabet_x10 - Program start
  *
  * Return: void
  */
 
-void print_alphabet_X10(void)
+void print_alphabet_x10(void)
 {
 	char c = 'a';
 	int i;
