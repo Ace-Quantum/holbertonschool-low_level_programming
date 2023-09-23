@@ -13,7 +13,7 @@
 int _islower(int c)
 {
 	if (c > 64 && c < 91)
-		_putchar('0');
+		return('0');
 	else if (c > 96 && c < 123)
-		_putchar('1');
+		return('1');
 }
