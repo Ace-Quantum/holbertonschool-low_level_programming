@@ -14,8 +14,6 @@ int _islower(int c)
 {
 	if (c > 64 && c < 91)
 		return('0');
-	else if (c > 96 && c < 123)
+	else if (c > 96)
 		return('1');
-	else
-		return(void);
 }
