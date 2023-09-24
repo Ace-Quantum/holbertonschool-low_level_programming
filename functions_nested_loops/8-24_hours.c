@@ -32,6 +32,14 @@ void jack_bauer(void)
 			d = 0;
 		}
 		c = 0;
+		if (a = 2 && b = 3)
+		{
+			b = 10;
+			a = 3;
+		}
 	}
-	b = 0;
+	if (b != 10)
+	{
+		b = 0;
+	}
 }
