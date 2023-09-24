@@ -38,8 +38,8 @@ void jack_bauer(void)
 			a = 3;
 		}
 	}
-	if ((b != 10) && (a != 3))
+	if ((b == 10) && (a == 3))
 	{
-		b = 0;
+		break;
 	}
 }
