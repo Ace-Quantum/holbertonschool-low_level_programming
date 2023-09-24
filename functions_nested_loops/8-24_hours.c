@@ -28,18 +28,18 @@ void jack_bauer(void)
 					_putchar(d + '0');
 					_putchar('\n');
 				}
+				d = 0;
 			}
-			d = 0;
+			c = 0;
 		}
-		c = 0;
-		if ((a == 2) && (b == 3))
+		if ((a = 2) && (b = 3))
 		{
-			b = 10;
-			a = 3;
+			b = 10
+			a = 3
 		}
-	}
-	if ((b == 10) && (a == 3))
-	{
-		b = 0;
+		else
+		{
+			b = 0;
+		}
 	}
 }
