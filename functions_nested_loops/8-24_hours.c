@@ -40,6 +40,6 @@ void jack_bauer(void)
 	}
 	if ((b == 10) && (a == 3))
 	{
-		break;
+		b = 0;
 	}
 }
