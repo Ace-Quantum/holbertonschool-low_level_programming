@@ -1,45 +1,36 @@
 #include "main.h"
 
 /**
- * jack_bauer - Program start
+ * print_alphabet_x10 - Program start
  *
  * Return: void
  */
 
+void print_digit(int n)
+{
+	if (n < 10)
+	{
+		_putchar('0');
+	}
+	putchar(n + '0');
+}
+
 void jack_bauer(void)
 {
-	int a = 0;
-	int b = 0;
-	int c = 0;
-	int d = 0;
+	int h = 0;
+	int m = 0;
 
-	for (a = 0; a < 3 ; a++)
+	for (h = 0; h < 24 ; h++)
 	{
-		for (b = 0; b < 10 ; b++)
+		for (m = 0; m < 60 ; m++)
 		{
-			for (c = 0; c < 6 ; c++)
-			{
-				for (d = 0; d < 10 ; d++)
-				{
-					_putchar(a + '0');
-					_putchar(b + '0');
-					_putchar(':');
-					_putchar(c + '0');
-					_putchar(d + '0');
-					_putchar('\n');
-				}
-			}
-			c = 0;
+			print_digit(h / 10);
+			print_digit(h % 10);
+			_putchar(':');
+			print_digit(m / 10);
+			print_digit(m % 10);
+			_putchar('\n');
 		}
-		if ((a == 2) && (b == 3))
-		{
-			b = 10;
-			a = 3;
-		}
-		else
-		{
-			b = 0;
-		}
-		d = 0;
 	}
 }
+
