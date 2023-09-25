@@ -12,36 +12,32 @@ void jack_bauer(void)
 	int b = 0;
 	int c = 0;
 	int d = 0;
-	int m = 0;
 
-	while (m < 1441)
+	while (a < 3)
 	{
-		while (a < 3)
+		while (b < 10)
 		{
-			while (b < 10)
+			while (c < 6)
 			{
-				while (c < 6)
+				while (d < 10)
 				{
-					while (d < 10)
-					{
-						_putchar(a + '0');
-						_putchar(b + '0');
-						_putchar(':');
-						_putchar(c + '0');
-						_putchar(d + '0');
-						_putchar('\n');
-						m = (m + 1);
-						d = (d + 1);
-					}
-					d = 0;
-					c = (c + 1);
+					_putchar(a + '0');
+					_putchar(b + '0');
+					_putchar(':');
+					_putchar(c + '0');
+					_putchar(d + '0');
+					_putchar('\n');
+					m = (m + 1);
+					d = (d + 1);
 				}
-				c = 0;
-				b = (b + 1);
+			d = 0;
+			c = (c + 1);
 			}
-			b = 0;
-			a = (a + 1);
+		c = 0;
+		b = (b + 1);
 		}
+	b = 0;
+	a = (a + 1);
 	}
 }
 
