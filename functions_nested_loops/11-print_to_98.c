@@ -17,7 +17,7 @@ void print_to_98(int n)
 		{
 			printf ("%d", n);
 			printf (", ");
-			n == (n + 1);
+			n = (n + 1);
 		}
 		printf ("98");
 	}
@@ -27,7 +27,7 @@ void print_to_98(int n)
 		{
 			printf ("%d", n);
 			printf (", ");
-			n == (n - 1);
+			n = (n - 1);
 		}
 		printf (98);
 	}
