@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * 11-print_to_98 - Where the program starts
+ * print_to_98 - Where the program starts
  *
  * @n: ascii variable to check
  *
