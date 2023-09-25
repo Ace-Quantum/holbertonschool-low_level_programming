@@ -12,7 +12,6 @@ void jack_bauer(void)
 	int b = 0;
 	int c = 0;
 	int d = 0;
-	int h = 0;
 	int m = 0;
 
 	while (m < 1441)
