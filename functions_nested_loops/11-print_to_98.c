@@ -20,6 +20,7 @@ void print_to_98(int n)
 			n = (n + 1);
 		}
 		printf ("98");
+		printf ('\n');
 	}
 	else
 	{
@@ -30,6 +31,7 @@ void print_to_98(int n)
 			n = (n - 1);
 		}
 		printf ("98");
+		printf ('\n');
 	}
 }
 
