@@ -12,7 +12,7 @@ void print_digit(int n)
 	{
 		_putchar('0');
 	}
-	putchar(n + '0');
+	_putchar(n + '0');
 }
 
 void jack_bauer(void)
