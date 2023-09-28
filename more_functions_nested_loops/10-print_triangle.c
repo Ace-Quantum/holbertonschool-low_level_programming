@@ -25,7 +25,7 @@ void print_triangle(int size)
 		}
 		hash = 0;
 		i++;
-		_putchar('\n')
+		_putchar('\n');
 
 	}
 }
