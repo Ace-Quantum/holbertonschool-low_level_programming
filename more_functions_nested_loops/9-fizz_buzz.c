@@ -5,7 +5,7 @@
  * FizzBuzz - FIZZBUZZFIZZBUZZFIZZBUZZ
  */
 
-void main(void)
+int main(void)
 {
 	int i = 1;
 
