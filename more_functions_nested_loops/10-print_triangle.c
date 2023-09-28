@@ -19,8 +19,13 @@ void print_triangle(int size)
 			hash++;
 		}
 		while (hash <= size)
+		{
 			_putchar('#');
+			hash++;
+		}
 		hash = 0;
 		i++;
+		_putchar('\n')
+
 	}
 }
