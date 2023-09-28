@@ -11,23 +11,23 @@ void print_triangle(int size)
 	int i = 1;
 	int hash = 1;
 
-	while (i <= size)
+	if (size <= 0)
 	{
-		while (hash <= (size - i - 1))
+		_putchar('\n');
+		return;
+	}
+
+	for (i = 1; i <= size; i++)
+	{
+		for (hash = 1; hash <= (size - i); hash++)
 		{
 			_putchar(' ');
-			hash++;
 		}
-		while (hash <= size)
+		for (hash = 1; hash <= size; hash++)
 		{
 			_putchar('#');
-			hash++;
 		}
-		hash = 0;
-		i++;
 		_putchar('\n');
 
 	}
-	if (size < 1)
-		_putchar('\n');
 }
