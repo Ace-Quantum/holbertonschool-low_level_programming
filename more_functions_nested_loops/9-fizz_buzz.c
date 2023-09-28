@@ -3,6 +3,8 @@
 
 /**
  * FizzBuzz - FIZZBUZZFIZZBUZZFIZZBUZZ
+ *
+ * Return: void?
  */
 
 int main(void)
@@ -23,4 +25,5 @@ int main(void)
 		putchar(' ');
 		i++;
 	}
+	return (0)
 }
