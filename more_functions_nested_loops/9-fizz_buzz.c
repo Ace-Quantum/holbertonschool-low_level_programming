@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * FizzBuzz - FIZZBUZZFIZZBUZZFIZZBUZZ
+ * main - FIZZBUZZFIZZBUZZFIZZBUZZ
  *
  * Return: void?
  */
