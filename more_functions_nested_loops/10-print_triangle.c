@@ -8,7 +8,7 @@
 
 void print_triangle(int size)
 {
-	int i = 0;
+	int i = 1;
 	int hash = 0;
 
 	while (i <= size)
@@ -28,4 +28,6 @@ void print_triangle(int size)
 		_putchar('\n');
 
 	}
+	if (size < 0)
+		_putchar('\n');
 }
