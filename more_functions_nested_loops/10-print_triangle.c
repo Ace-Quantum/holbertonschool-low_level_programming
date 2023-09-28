@@ -13,7 +13,7 @@ void print_triangle(int size)
 
 	while (i <= size)
 	{
-		while (hash <= (size - i))
+		while (hash <= (size - i + 1))
 		{
 			_putchar(' ');
 			hash++;
@@ -28,6 +28,6 @@ void print_triangle(int size)
 		_putchar('\n');
 
 	}
-	if (size < 0)
+	if (size < 1)
 		_putchar('\n');
 }
