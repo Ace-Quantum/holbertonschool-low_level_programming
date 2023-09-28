@@ -11,9 +11,9 @@ void print_diagonal(int n)
 	int i = 0;
 	int j = 0;
 
-	for (i < n ; i++)
+	for (i > n ; i++)
 	{
-		for (j < i ; j++)
+		for (j > i ; j++)
 		{
 			_putchar('_');
 		}
