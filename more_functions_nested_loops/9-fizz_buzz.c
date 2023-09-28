@@ -18,8 +18,8 @@ void FizzBuzz(void)
 		else if (i % 5)
 			printf("Buzz");
 		else
-			printf(i + '0');
+			printf(i);
 		putchar(' ');
-		i++
+		i++;
 	}
 }
