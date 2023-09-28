@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * more_numbers - starting point of the code
+ */
+
 void more_numbers(void)
 {
 	int i;
