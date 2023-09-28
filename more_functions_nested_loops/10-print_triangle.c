@@ -9,11 +9,11 @@
 void print_triangle(int size)
 {
 	int i = 1;
-	int hash = 0;
+	int hash = 1;
 
 	while (i <= size)
 	{
-		while (hash <= (size - i + 1))
+		while (hash <= (size - i - 1))
 		{
 			_putchar(' ');
 			hash++;
