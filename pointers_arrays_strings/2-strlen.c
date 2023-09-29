@@ -1,8 +1,18 @@
 #include "main.h"
 
+/**
+ * _strlen - starting point of the function, determines length of a string
+ *
+ * @s: string to be measured
+ *
+ * Return: return the length of the string
+ */
+
 int _strlen(char *s)
 {
-	for (int i = 0; *s[i] != 0;)
-		i++
+	int i;
+
+	while (*s[i] != 0)
+		i++;
 	return(i);
 }
