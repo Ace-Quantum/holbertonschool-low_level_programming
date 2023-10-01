@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 {
 	while (a[n] != 0)
 	{
-		printf(a[n]);
+		printf("%d", a[n]);
 		if (a[n + 1] != 0)
 		{
 			_putchar(',');
