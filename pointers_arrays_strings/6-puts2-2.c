@@ -6,7 +6,7 @@
  * @str: the str to be skipped through
  */
 
-void puts2(char *str)
+void puts2_2(char *str)
 {
 	int i = 0;
 
