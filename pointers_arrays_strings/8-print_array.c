@@ -21,3 +21,4 @@ void print_array(int *a, int n)
 		n++;
 	}
 	_putchar('\n');
+}
