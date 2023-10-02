@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
- * 
+ * _atoi - start of the program
+ *
+ * @s: string to be extracted from
+ *
+ * Return: return the number from the string
  */
 
 int _atoi(char *s)
@@ -33,5 +37,5 @@ int _atoi(char *s)
 	else
 		PosNeg = -1;
 
-	return PosNeg * Result;
+	return (PosNeg * Result);
 }
