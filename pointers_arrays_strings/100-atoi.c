@@ -12,6 +12,7 @@ int _atoi(char *s)
 	int Result;
 
 	GenMachine = 0;
+	Result = 0;
 
 	while (*s != '\0')
 	{
