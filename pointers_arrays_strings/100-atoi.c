@@ -21,7 +21,7 @@ int _atoi(char *s)
 			GenMachine = GenMachine - 1;
 		else if (*s > 47 && *s < 58)
 		{
-			Digit = *s + '0';
+			Digit = s + '0';
 			Result = Result * 10 + Digit;
 		}
 		s++;
