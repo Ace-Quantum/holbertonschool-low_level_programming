@@ -4,7 +4,7 @@
  *
  */
 
-char *_strcpy(char *dest, char *scr)
+char *_strcpy(char *dest, char *src)
 {
 	char *dest_start = dest;
 	
