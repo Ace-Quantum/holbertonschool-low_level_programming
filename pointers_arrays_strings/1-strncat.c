@@ -6,6 +6,7 @@
  * @dest: the string to be concated to, the start of the string
  * @src: the string to be concated
  * @n: the length of the string concat max
+ * Return: return the same string as before
  */
 
 char *_strncat(char *dest, char *src, int n)
