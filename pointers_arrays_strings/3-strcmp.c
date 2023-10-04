@@ -22,5 +22,5 @@ int _strcmp(char *s1, char *s2)
 	if (len1 == len2)
 		return (0);
 	else
-		return (s1 - s2);
+		return (s2 - s1);
 }
