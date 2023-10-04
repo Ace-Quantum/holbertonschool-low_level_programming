@@ -18,14 +18,14 @@ int _atoi(char *s)
 	PosNegDet = 0;
 	Result = 0;
 
-	while (*s < 47 || *s > 58)
+	while ((*s < 47 || *s > 58) && (*s != '\0'))
 	{
 		if (*s == 45)
 			PosNegDet = PosNegDet + 1;
 		s++;
 	}
 
-	while (*s > 47 && *s < 58)
+	while ((*s > 47 && *s < 58) && (*s != '\0'))
 	{
 		Digit = *s - '0';
 		Result = Result * 10 - Digit;
