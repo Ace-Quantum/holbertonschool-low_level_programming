@@ -1,7 +1,11 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
+ *_strncat - start of the function
  *
+ * @dest: the string to be concated to, the start of the string
+ * @src: the string to be concated
+ * @n: the length of the string concat max
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -13,5 +17,5 @@ char *_strncat(char *dest, char *src, int n)
 		dest[dest_len + i] = src[i];
 	dest[dest_len + i] = '\0';
 
-	return dest;
+	return (dest);
 }
