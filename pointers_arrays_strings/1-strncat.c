@@ -1,17 +1,17 @@
 #include "main.h"
-
+#include "2-strlen.c"
 /**
  *
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *dest_start = dest;
+	int dest_len = _strlen(dest);
+	int i;
 
-	while (*dest != '\0')
-		dest++;
-	while (*src != '\0' && *src != n)
-		dest++ = src++;
-	*dest = '\0';
-	return (dest_start);
+	for (i = 0 ; i < n && src[i] != '\0' ; i++)
+		dest[dest_len + i] = src[i];
+	dest[dest_len + 1] = '\0';
+
+	return dest;
 }
