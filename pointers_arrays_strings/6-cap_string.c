@@ -4,11 +4,12 @@ char *cap_string(char *str)
 {
 	int sep[11] = {44, 59, 46, 33, 63, 34, 40, 41, 32, 9, 10};
 	int i = 0;
+	int j;
 	char *s = str;
 
 	while (str[i] != '\0')
 	{
-		for (j = 0; j < 12; j++)
+		for (j = 0; j < 11; j++)
 		{
 			if (str[i] = sep[j])
 			{
@@ -18,4 +19,5 @@ char *cap_string(char *str)
 		}
 		i++;
 	}
+	return (s);
 }
