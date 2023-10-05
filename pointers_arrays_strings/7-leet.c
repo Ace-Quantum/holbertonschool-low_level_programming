@@ -11,14 +11,16 @@ char *leet(char *str)
 	int leet[5] = {52, 51, 48, 55, 49};
 	int i = 0;
 	int j;
+	char *s = str;
 
 	while (str[i] != '\0')
 	{
 		for (j = 0 ; j < 6; j++)
 		{
-			if (str[i] = low[j] || stri[i] = high[j])
+			if (str[i] = low[j] || str[i] = high[j])
 				str[i] = leet[j];
 		}
 	i++;
 	}
+	return (s);
 }
