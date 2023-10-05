@@ -1,7 +1,10 @@
 #include "main.h"
 
 /**
+ * leet - makes things cooler
  *
+ * @str: the string to be made cooler
+ * Return: a pointer to the newer cooler string
  */
 
 char *leet(char *str)
