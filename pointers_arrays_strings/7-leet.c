@@ -17,7 +17,7 @@ char *leet(char *str)
 	{
 		for (j = 0 ; j < 6; j++)
 		{
-			if (str[i] = low[j] || str[i] = high[j])
+			if (str[i] == low[j] || str[i] == high[j])
 				str[i] = leet[j];
 		}
 	i++;
