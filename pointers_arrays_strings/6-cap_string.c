@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * cap_string - start of the program
+ *
+ * @str: string to have capped
+ * Return: beginning of string pointer
+ */
+
 char *cap_string(char *str)
 {
 	int sep[11] = {44, 59, 46, 33, 63, 34, 40, 41, 32, 9, 10};
