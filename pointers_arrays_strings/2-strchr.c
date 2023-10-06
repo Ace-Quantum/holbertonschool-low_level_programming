@@ -12,6 +12,6 @@ char *_strchr(char *s, char c)
 	while (s[i] != c)
 		i++;
 
-	r = s[i];
+	r = &s[i];
 	return (r);
 }
