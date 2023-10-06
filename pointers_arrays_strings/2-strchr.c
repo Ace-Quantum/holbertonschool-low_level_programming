@@ -6,17 +6,13 @@
 
 char *_strchr(char *s, char c)
 {
-	char *r;
+	char *r = (NULL);
 	int i = 0;
 
 	while (s[i] != c && s[i] != 0)
 		i++;
 
 	if (s[i] != 0)
-	{
 		r = &s[i];
-		return (r);
-	}
-	else
-		return (0);
+	return (r);
 }
