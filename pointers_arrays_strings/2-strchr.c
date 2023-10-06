@@ -6,7 +6,7 @@
 
 char *_strchr(char *s, char c)
 {
-	char *r = NULL;
+	char *r;
 	int i = 0;
 
 	while (s[i] != c && s[i] != 0)
@@ -18,5 +18,5 @@ char *_strchr(char *s, char c)
 		return (r);
 	}
 	else
-		return (r);
+		return ('\0');
 }
