@@ -15,7 +15,7 @@ char *_strchr(char *s, char c)
 	if (s[i] != 0)
 		r = &s[i];
 	else
-		r = 0;
+		r = void;
 
 	return (r);
 }
