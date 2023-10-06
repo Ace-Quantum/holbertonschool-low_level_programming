@@ -6,12 +6,11 @@
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
 	char *r;
 
-	while (s[i] != c)
-		i++;
+	while (s != c)
+		s++;
 
-	r = s[i];
+	r = s;
 	return (r);
 }
