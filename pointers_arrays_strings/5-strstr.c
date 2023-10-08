@@ -11,7 +11,7 @@ char *_strstr(char *haystack, char *needle)
 	int j = 0;
 	int lenha = _strlen(haystack);
 	int lenne = _strlen(needle);
-	char *r;
+	char *r = '\0';
 
 	while (i < lenha)
 	{
