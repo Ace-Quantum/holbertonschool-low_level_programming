@@ -10,7 +10,7 @@ char *_strstr(char *haystack, char *needle)
 	int i = 0;
 	int j = 0;
 	int lenha = _strlen(haystack);
-	int lenne = strlen(needle);
+	int lenne = _strlen(needle);
 	char *r;
 
 	while (i < lenha)
@@ -22,7 +22,7 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (haystack[i] == needle[j])
 				{
-					if (j = lenne)
+					if (j == lenne)
 						return (r);
 					i++;
 					j++;
