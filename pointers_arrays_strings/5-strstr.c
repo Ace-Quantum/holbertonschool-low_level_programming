@@ -2,7 +2,12 @@
 #include "2-strlen.c"
 
 /**
+ * _strstr - starting point of endless loops
  *
+ * @haystack: the string to search for a string within
+ * @needle: the string to search for
+ *
+ * Return: the pointer where it all starts or return nothing
  */
 
 char *_strstr(char *haystack, char *needle)
