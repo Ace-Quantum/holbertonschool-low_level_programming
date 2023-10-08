@@ -9,22 +9,22 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int stlen = _strlen(s);
 	int arlen = _strlen(accept);
-	unsigned int r;
+	unsigned int r = 0;
 	int i;
 	int j;
-	int c = 0;
 
 	for (i = 0 ; i <= stlen; i++)
 	{
 		for (j = 0 ; j <= arlen; j++)
 		{
-			if s[i] == accept[j]
+			if (s[i] == accept[j])
 			{
-				c++;
+				r++;
 				break;
 			}
-			if j == arlen
+			if (j == arlen)
 				return (r);
 		}
 	}
+	return (r);
 }
