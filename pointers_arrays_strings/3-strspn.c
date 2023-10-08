@@ -2,7 +2,12 @@
 #include "2-strlen.c"
 
 /**
+ * _strspn - starting point of the search program
  *
+ * @s: string to search
+ * @accept: acceptable letters
+ *
+ * Return: number of letters that fit before one doesn't
  */
 
 unsigned int _strspn(char *s, char *accept)
