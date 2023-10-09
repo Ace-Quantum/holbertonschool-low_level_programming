@@ -12,12 +12,28 @@ void print_diagsums(int *a, int size)
 {
 	int sum1 = 0;
 	int sum2 = 0;
+	int c;
+	int r = 0;
 	int i = 0;
 	int j = 0;
+	int arr[size][size];
+	int total = ((size - 1) * 2)
+
+	while (i <= total)
+	{
+		for (c = 0; c < size; c++)
+		{
+			arr[r][c] = a[i];
+			i++;
+		}
+		i++;
+	}
+
+	i = 0;
 
 	while (i <= size)
 	{
-		sum1 = sum1 + a[i][j];
+		sum1 = sum1 + arr[i][j];
 		i++;
 		j++;
 	}
@@ -27,7 +43,7 @@ void print_diagsums(int *a, int size)
 
 	while (j <= size)
 	{
-		sum2 = sum2 + a[i][j];
+		sum2 = sum2 + arr[i][j];
 		i--;
 		j++;
 	}
