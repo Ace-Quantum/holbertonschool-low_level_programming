@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 	int i;
 	int j;
 
-	if (arlen == 0)
+	if (stlen == 0)
 		return (r);
 
 	for (i = 0 ; i <= stlen; i++)
