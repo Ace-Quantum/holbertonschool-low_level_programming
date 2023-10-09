@@ -26,7 +26,7 @@ void print_diagsums(int *a, int size)
 			arr[r][c] = a[i];
 			i++;
 		}
-		i++;
+		r++;
 	}
 
 	i = 0;
