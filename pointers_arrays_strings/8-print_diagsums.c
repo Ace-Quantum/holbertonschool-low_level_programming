@@ -17,7 +17,7 @@ void print_diagsums(int *a, int size)
 	int i = 0;
 	int j = 0;
 	int arr[10][10];
-	int total = ((size - 1) * 2)
+	int total = ((size - 1) * 2);
 
 	while (i <= total)
 	{
