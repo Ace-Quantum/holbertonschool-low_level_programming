@@ -18,6 +18,12 @@ char *_strstr(char *haystack, char *needle)
 	int lenne = _strlen(needle);
 	char *r = '\0';
 
+	if (lenne == 0)
+	{
+		r = haystack;
+		return (r);
+	}
+
 	while (i < lenha)
 	{
 		if (haystack[i] == needle[j])
