@@ -2,9 +2,9 @@
 #include "_strlen.c"
 
 /**
- * _puts_recursion - starting point of the code. Prints a string character by character.
+ * _puts_recursion - Prints a string character by character.
  *
- *
+ * @s: the string to print
  */
 
 void _puts_recursion(char *s)
