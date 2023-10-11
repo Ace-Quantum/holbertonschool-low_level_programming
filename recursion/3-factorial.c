@@ -9,7 +9,7 @@ int factorial(int n)
 
 int factorio(int n, int x)
 {
-	if (n < 1)
+	if (n == 0)
 		return (x);
 
 	x = (n * (n - 1));
