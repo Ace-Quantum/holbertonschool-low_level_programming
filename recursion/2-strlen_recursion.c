@@ -12,7 +12,7 @@ int RecursiveStrLen(char *s, int x)
 {
 	if (s[x] == '\0')
 		return(x);
-
-	x++;
-	RecursiveStrLen(s, x);
+	else
+		x++;
+		RecursiveStrLen(s, x);
 }
