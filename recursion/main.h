@@ -21,4 +21,6 @@ void PrintInReverse(char *s, int x);
 
 int RecursiveStrLen(char *s, int x);
 
+int factorio(int n, int x);
+
 #endif

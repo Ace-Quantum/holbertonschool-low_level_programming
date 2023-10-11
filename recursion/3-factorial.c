@@ -14,7 +14,7 @@ int factorio(int n, int x)
 
 	x = (n * (n - 1));
 	n--;
-	return (factorio(n, x))
+	return (factorio(n, x));
 }
 /**
  * Ignore all this
