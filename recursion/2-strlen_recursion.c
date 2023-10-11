@@ -5,7 +5,7 @@ int _strlen_recursion(char *s)
 	int x = 0;
 
 	RecursiveStrLen(s);
-	return(x)
+	return(x);
 }
 
 int RecursiveStrLen(char *s)
