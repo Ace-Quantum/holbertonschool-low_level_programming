@@ -8,7 +8,7 @@ void _print_rev_recursion(char *s)
 	PrintInReverse(s, x - 1);
 }
 
-void PrintInReverse(int *s, int x)
+void PrintInReverse(char *s, int x)
 {
 	if (x < 0)
 		return;
