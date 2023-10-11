@@ -5,7 +5,7 @@ void _print_rev_recursion(char *s)
 {
 	int x = _strlen(s);
 
-	PrintInReverse(s, x);
+	PrintInReverse(s, x - 1);
 }
 
 void PrintInReverse(int *s, int x)
@@ -14,6 +14,5 @@ void PrintInReverse(int *s, int x)
 		return;
 
 	_putchar(s[x]);
-	x--;
+	PrintInReverse(s, x - 1);
 }
-
