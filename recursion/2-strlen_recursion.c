@@ -14,5 +14,5 @@ int RecursiveStrLen(char *s, int x)
 		return(x);
 
 	x++;
-	RecursiveStrLen(s);
+	RecursiveStrLen(s, x);
 }
