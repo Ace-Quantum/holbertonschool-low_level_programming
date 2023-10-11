@@ -19,6 +19,6 @@ int _putchar(char c);
 
 void PrintInReverse(char *s, int x);
 
-int RecursiveStrLen(char *s);
+int RecursiveStrLen(char *s, int x);
 
 #endif
