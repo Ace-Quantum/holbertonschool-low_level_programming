@@ -4,7 +4,7 @@ int is_prime_number(int n)
 {
 	int i;
 
-	if (n > 0)
+	if (n > 1)
 		i = 2;
 	else if (n < 2)
 		return (0);
