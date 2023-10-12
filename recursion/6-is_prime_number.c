@@ -15,5 +15,5 @@ int rec_prime(int n, int i)
 	if (i > n / 2)
 		return (1);
 
-	return (rec_prime(n, i - 1));
+	return (rec_prime(n, i + 1));
 }
