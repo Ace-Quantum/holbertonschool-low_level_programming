@@ -7,7 +7,7 @@ int _pow_recursion(int x, int y)
 	if (y < 1)
 		return (x);
 
-	return (_rec_pow(x, y, i));
+	return (_rec_pow(x, y - 1, i));
 }
 
 int _rec_pow(int x, int y, int i)
