@@ -26,5 +26,7 @@ int factorio(int n, int x);
 int RootSquare(int n, int i);
 
 int _rec_pow(int x, int y, int i);
+
+int rec_prime(int n, int i);
 	
 #endif
