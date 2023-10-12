@@ -24,5 +24,7 @@ int RecursiveStrLen(char *s, int x);
 int factorio(int n, int x);
 
 int RootSquare(int n, int i);
+
+int _rec_pow(int x, int y, int i);
 	
 #endif
