@@ -2,7 +2,10 @@
 
 int _sqrt_recursion(int n)
 {
-	int i = 0;
+	int i = 1;
+
+	if (n < 0)
+		return (-1);
 
 	return (RootSquare(n, i));
 }
