@@ -12,7 +12,7 @@ int factorio(int n, int x)
 	if (n == 0)
 		return (x);
 
-	x = (n * (n - 1));
+	x = (x * n);
 	n--;
 	return (factorio(n, x));
 }
