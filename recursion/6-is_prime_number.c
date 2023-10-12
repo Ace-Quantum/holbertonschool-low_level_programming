@@ -2,7 +2,7 @@
 
 int is_prime_number(int n)
 {
-	int i = 1;
+	int i = 2;
 
 	return (rec_prime(n, i));
 }
