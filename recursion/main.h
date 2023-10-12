@@ -23,4 +23,6 @@ int RecursiveStrLen(char *s, int x);
 
 int factorio(int n, int x);
 
+int RootSquare(int n, int i);
+	
 #endif
