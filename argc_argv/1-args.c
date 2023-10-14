@@ -8,7 +8,7 @@ void print_arg_int(int argc)
 		printf("error");
 }
 
-void main(int argc)
+int main(int argc, char *argv[])
 {
 	print_arg_int(argc);
 	return (0);
