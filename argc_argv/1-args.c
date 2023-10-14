@@ -3,7 +3,7 @@
 void print_arg_int(int argc)
 {
 	if (argc >=1)
-		printf("%d\n", argc);
+		printf("%d\n", argc - 1);
 	else
 		printf("error");
 }
