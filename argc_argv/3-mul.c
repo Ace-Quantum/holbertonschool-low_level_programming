@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 	return (0);
 }
 
-void mult_num(int i, char* c)
+void mult_num(int argc, char* argv[])
 {
 	int x = (c[1] * c[2]);
 
