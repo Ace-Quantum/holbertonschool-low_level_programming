@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 		return (1);
 	}
 
-	mult_num(argc, argv[]);
+	mult_num(argc, argv);
 	return (0);
 }
 
