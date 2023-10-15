@@ -2,7 +2,7 @@
 
 void mult_num(int argc, char* argv[])
 {
-	int x = (c[1] * c[2]);
+	int x = (argv[1] * argv[2]);
 
 	printf("%d", x);
 }
