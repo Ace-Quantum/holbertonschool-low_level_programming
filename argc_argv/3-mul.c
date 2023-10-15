@@ -2,7 +2,10 @@
 
 void mult_num(int argc, char* argv[])
 {
-	int x = (argv[1] * argv[2]);
+	int mult1 = atoi(argv[1]);
+	int mult2 = atoi(argv[2]);
+
+	int x = (mult1 * mult2);
 
 	printf("%d", x);
 }
