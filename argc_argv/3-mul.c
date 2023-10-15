@@ -1,18 +1,21 @@
-#include <stdio.h>
+#include <main.h>
 
-int MultNum(int a, int b)
+int main(int argc, char* argv[])
 {
-	if (a != '\0' && b != '\0')
-		return (a * b);
-	else
+	if (argc != 2)
 	{
 		printf("Error");
 		printf("\n");
 		return (1);
 	}
+
+	mult_num(argc, argv[]);
+	return (0);
 }
 
-int main(int a, int b)
+void mult_num(int i, char* c)
 {
-	return MultNum(a, b);
+	int x = (c[1] * c[2]);
+
+	printf("%d", x);
 }
