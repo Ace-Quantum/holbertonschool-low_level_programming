@@ -3,8 +3,8 @@
 
 void mult_num(int argc, char* argv[])
 {
-	int mult1 = _atoi(*argv[1]);
-	int mult2 = _atoi(*argv[2]);
+	int mult1 = _atoi(argv[1]);
+	int mult2 = _atoi(argv[2]);
 
 	int x = (mult1 * mult2);
 
@@ -13,7 +13,7 @@ void mult_num(int argc, char* argv[])
 
 int main(int argc, char* argv[])
 {
-        if (argc != 2)
+        if (argc != 3)
         {
                 printf("Error");
                 printf("\n");
