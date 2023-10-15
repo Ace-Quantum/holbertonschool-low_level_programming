@@ -7,7 +7,7 @@ int MultNum(int a, int b)
 	else
 	{
 		printf("Error");
-		printf('\n');
+		printf("\n");
 		return (1);
 	}
 }
