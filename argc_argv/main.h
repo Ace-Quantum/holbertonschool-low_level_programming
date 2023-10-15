@@ -9,4 +9,6 @@ void loop_args(int argc, char *argv[]);
 
 void mult_num(int i, char* c);
 
+int _atoi(char *s)
+
 #endif
