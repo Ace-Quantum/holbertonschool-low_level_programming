@@ -27,10 +27,9 @@ int main(int argc, char* argv[])
 	}
 
 	for (i = 1; i <= argc - 1; i++)
-	{
 		sum = sum + atoi(argv[i]);
-		printf("%d", sum);
-	}
 
+	printf("%d", sum);
+	printf("\n");
 	return (0);
 }
