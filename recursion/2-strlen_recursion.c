@@ -3,7 +3,7 @@
 /**
  * _strlen_recursion - calls a recursive function
  * @s: a pointer to the string to measure
- * return: the length of the string
+ * Return: the length of the string
  */
 
 int _strlen_recursion(char *s)
@@ -17,12 +17,13 @@ int _strlen_recursion(char *s)
  * RecursiveStrLen - recursively finds the strlen
  * @s: string to find length of
  * @x: the length of the string
+ * Return: length of the string
  */
 
 int RecursiveStrLen(char *s, int x)
 {
 	if (s[x] == '\0')
-		return(x);
+		return (x);
 
 	x++;
 	return (RecursiveStrLen(s, x));
