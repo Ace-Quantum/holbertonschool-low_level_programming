@@ -4,7 +4,7 @@
 int main(int argc, char* argv[])
 {
 	int i;
-	int j;
+	int j = 0;
 	int sum = 0;
 
 	if (argc == 1)
@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 		return (0);
 	}
 
-	for (i = 1; i <= argc; i++)
+	for (i = 1; i <= argc - 1; i++)
 	{
 		while (argv[i][j] != '\0')
 		{
@@ -26,8 +26,11 @@ int main(int argc, char* argv[])
 		}
 	}
 
-	for (i = 1; i <= argc; i++)
+	for (i = 1; i <= argc - 1; i++)
+	{
 		sum = sum + atoi(argv[i]);
+		printf("%d", sum);
+	}
 
 	return (0);
 }
