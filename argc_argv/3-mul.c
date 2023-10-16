@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "100-atoi.c"
+#include <stdlib.h>
 
 void mult_num(int argc, char* argv[])
 {
-	int mult1 = _atoi(argv[1]);
-	int mult2 = _atoi(argv[2]);
+	int mult1 = atoi(argv[1]);
+	int mult2 = atoi(argv[2]);
 
 	int x = (mult1 * mult2);
 
