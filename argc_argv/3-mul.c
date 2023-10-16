@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
         int mult1 = atoi(argv[1]);
 	int mult2 = atoi(argv[2]);
 	
-	if (argc != 3)
+	if (argc != 2)
         {
                 printf("Error");
                 printf("\n");
