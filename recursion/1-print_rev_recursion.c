@@ -2,8 +2,11 @@
 #include "_strlen.c"
 
 /***
- * _print_rev_recursion - prints characters in reverse
  *
+ * _print_rev_recursion - calls function to print characters in reverse
+ *
+ * PrintInReverse - prints characters in reverse
+ * 
  * @s: the string to be printed in reverse
  * @x: the integer to represent the end of the string
  *
