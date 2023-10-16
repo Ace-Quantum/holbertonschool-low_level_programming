@@ -20,6 +20,7 @@ int main(int argc, char* argv[])
 			if (argv[i][j] < 4 || argv[i][j] > 57)
 			{
 				printf("Error");
+				printf("\n");
 				return (1);
 			}
 			j++;
