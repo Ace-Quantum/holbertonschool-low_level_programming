@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _sqrt_recursion - beginning of the set of functions
+ * @n: the number of which to find the square root
+ * Return: the root of the squared number
+ */
+
 int _sqrt_recursion(int n)
 {
 	int i = 1;
@@ -9,6 +15,13 @@ int _sqrt_recursion(int n)
 
 	return (RootSquare(n, i));
 }
+
+/**
+ * RootSquare - the function that does the actual work
+ * @n: the number of which to find the root of
+ * @i: the iterator/checker
+ * Return: i, when it becomes the square root, or -1 if there is none
+ */
 
 int RootSquare(int n, int i)
 {
