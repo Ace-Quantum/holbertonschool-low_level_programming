@@ -26,12 +26,12 @@ int _sqrt_recursion(int n)
 int RootSquare(int n, int i)
 {
 	if (i * i == n)
-		return(i);
+		return (i);
 
 	if (i == n / 2)
-		return(-1);
+		return (-1);
 
 	i++;
 
-	return(RootSquare(n, i));
+	return (RootSquare(n, i));
 }
