@@ -1,7 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char* argv[])
+/**
+ * main - start of the program
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: the sum of arguments
+ */
+
+int main(int argc, char *argv[])
 {
 	int i;
 	int j = 0;
