@@ -4,6 +4,7 @@
 int main(int argc, char* argv[])
 {
 	int i;
+	int j;
 	int sum = 0;
 
 	if (argc == 1)
@@ -14,10 +15,14 @@ int main(int argc, char* argv[])
 
 	for (i = 1; i <= argc; i++)
 	{
-		if (*argv[i] < 4 || *argv[i] > 57)
+		while (*argv[i][j] != '\0')
 		{
-			printf("Error");
-			return (1);
+			if (*argv[i] < 4 || *argv[i] > 57)
+			{
+				printf("Error");
+				return (1);
+			}
+			j++;
 		}
 	}
 
