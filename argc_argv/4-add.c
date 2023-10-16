@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 	{
 		while (argv[i][j] != '\0')
 		{
-			if (*argv[i] < 4 || *argv[i] > 57)
+			if (*argv[i][j] < 4 || *argv[i][j] > 57)
 			{
 				printf("Error");
 				return (1);
