@@ -32,14 +32,3 @@ int factorio(int n, int x)
 	n--;
 	return (factorio(n, x));
 }
-/**
- * Ignore all this
-int factorial(int n)
-{
-	if (n < 1)
-		return (n);
-
-	n = (n * n-1)
-	return(factorial(n));
-	*/
-
