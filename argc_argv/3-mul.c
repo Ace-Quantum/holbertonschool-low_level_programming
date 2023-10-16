@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
                 return (1);
         }
 
-	int mult1 = atoi(argv[0]);
+	int mult1 = atoi(argv[1]);
         int mult2 = atoi(argv[2]);
 
 	printf("%d\n", (mult1 * mult2));
