@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * print_own_name - start of the program
+ * @argc: the number of arguments passed in
+ * @argv: an array of strings representing the arguments that were passed in
+ */
+
 void print_own_name(int argc, char *argv[])
 {
 	if (argc >=1)
@@ -7,6 +13,12 @@ void print_own_name(int argc, char *argv[])
 	else
 		printf("error");
 }
+
+/**
+ * main - the start
+ * @argc: the number of arguments passed in
+ * @argv: array of arguments passed in
+ */
 
 int main(int argc, char *argv[])
 {
