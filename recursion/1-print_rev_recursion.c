@@ -1,15 +1,9 @@
 #include "main.h"
 #include "_strlen.c"
 
-/***
- *
+/**
  * _print_rev_recursion - calls function to print characters in reverse
- *
- * PrintInReverse - prints characters in reverse
- * 
  * @s: the string to be printed in reverse
- * @x: the integer to represent the end of the string
- *
  */
 
 void _print_rev_recursion(char *s)
@@ -18,6 +12,12 @@ void _print_rev_recursion(char *s)
 
 	PrintInReverse(s, x - 1);
 }
+
+/**
+ * PrintInReverse - prints the characters in reverse
+ * @s: the string to be printed in reverse
+ * @x: the integer to represent the end of the string
+ */
 
 void PrintInReverse(char *s, int x)
 {
