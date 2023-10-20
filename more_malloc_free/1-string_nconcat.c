@@ -18,18 +18,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (nn > _strlen(s2))
 		nn = _strlen(s2);
 
-	str = malloc(_strlen(s1) + nn + 1);
+	str = malloc(_strlen(s1) + nn);
 
 	if (str == NULL)
 		return (NULL);
 
-	while (i <= _strlen(s1))
+	while (i < _strlen(s1))
 	{
 		str[i] = s1[i];
 		i++;
 	}
 
-	while (i <= (_strlen(s1) + nn))
+	while (i < (_strlen(s1) + nn))
 	{
 		str[i] = s2[j];
 		i++;
