@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "_strlen.c"
 
-char *string_nconcat(char *s1, char *s2, unsigned int n);
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
 	int i = 0;
