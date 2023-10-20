@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_alphabet - Program start
@@ -8,13 +9,18 @@
 
 void print_alphabet(void)
 {
-	char c = 'a';
+	char c = 97;
 
-	while (c <= 'z')
+	while (c <= 122)
 	{
-		_putchar(c);
+		putchar(c);
 		c++;
 	}
 
-	_putchar('\n');
+	putchar('\n');
+}
+
+void main(void)
+{
+	print_alphabet;
 }
