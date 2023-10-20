@@ -15,10 +15,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	if (n > _strlen(s2))
-		n = _strlen(s2);
+	if (nn > _strlen(s2))
+		nn = _strlen(s2);
 
-	str = malloc(_strlen(s1) + n + 1);
+	str = malloc(_strlen(s1) + nn + 1);
 
 	if (str == NULL)
 		return (NULL);
@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 
-	while (i <= (_strlen(s1) + n))
+	while (i <= (_strlen(s1) + nn))
 	{
 		str[i] = s2[j];
 		i++;
