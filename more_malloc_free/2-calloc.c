@@ -3,9 +3,9 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *array;
+	void **array;
 	void *array_start;
-	int i = 0;
+	unsigned int i = 0;
 
 	array = malloc(nmemb * size);
 
