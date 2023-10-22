@@ -11,8 +11,15 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 
 	while (i < nnmeb)
 	{
-		*array[i] = malloc(ssize);
-		*array[i] = 0;
+		array[i] = malloc(ssize);
+		i++;
+	}
+
+	i = 0;
+
+	while (i <nnmeb)
+	{
+		array[i] = 0;
 		i++;
 	}
 
