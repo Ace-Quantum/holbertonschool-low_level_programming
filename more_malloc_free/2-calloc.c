@@ -3,20 +3,12 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void **array;
-	void *array_start;
+	void *array = malloc(nmemb * size);
+	unsigned char *array_start = (unsigned char *)array;
 	unsigned int i = 0;
 
-	array = malloc(nmemb * size);
-
 	while (i < size)
-	{
-		array_start = malloc(size);
-		array_start = 0;
-		array[i] = array_start;
-		array_start++;
-		i++;
-	}
+		array_start[i] = 0;
 
-	return (array)
+	return array;
 }
