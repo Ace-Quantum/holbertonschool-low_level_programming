@@ -14,7 +14,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		array_start = malloc(size);
 		array_start = 0;
 		array[i] = array_start;
-		array_start ++;
+		array_start++;
 		i++;
 	}
 
