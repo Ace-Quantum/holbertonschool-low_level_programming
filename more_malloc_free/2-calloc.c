@@ -4,9 +4,11 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	(void)size;
-	void *array = malloc(nmemb);
+	void *array;
 	unsigned char *array_start = (unsigned char *)array;
 	unsigned int i = 0;
+
+	array = malloc(nmemb);
 
 	while (i < nmemb)
 	{
