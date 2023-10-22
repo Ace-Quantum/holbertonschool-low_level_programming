@@ -8,7 +8,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i = 0;
 
 	while (i < size)
+	{
 		array_start[i] = 0;
+		i++;
+	}
 
 	return array;
 }
