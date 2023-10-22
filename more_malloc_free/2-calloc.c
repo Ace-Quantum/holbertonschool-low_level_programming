@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 
 	while (i <nnmeb)
 	{
-		array[i] = 0;
+		((unsigned char *)array)[i] = 0;
 		i++;
 	}
 
