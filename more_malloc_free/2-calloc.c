@@ -9,7 +9,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	while (i < size)
 	{
-		array_start = malloc(size);
 		array_start = 0;
 		array_start++;
 		i++;
