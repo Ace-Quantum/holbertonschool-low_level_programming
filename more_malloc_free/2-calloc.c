@@ -7,7 +7,7 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 	int ssize = (int)size;
 	int i = 0;
 
-	void **array = (void **)malloc(nnmeb * sizeof(void *));
+	char **array = (void **)malloc(nnmeb * sizeof(void *));
 
 	while (i < nnmeb)
 	{
