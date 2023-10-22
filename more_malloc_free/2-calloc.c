@@ -7,7 +7,7 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 	int ssize = (int)size;
 	int i = 0;
 
-	void *array;
+	int *array;
 
 	while (i <= nnmeb)
 	{
