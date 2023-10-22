@@ -3,6 +3,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	(void)size;
 	void *array = malloc(nmemb);
 	unsigned char *array_start = (unsigned char *)array;
 	unsigned int i = 0;
