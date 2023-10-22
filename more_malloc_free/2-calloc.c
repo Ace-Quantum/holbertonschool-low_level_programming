@@ -3,15 +3,13 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void **array = malloc(nmemb);
-	unsigned char *array_start = (unsigned char *)array;
+	void **array = malloc(nmemb * sizeof(void *));
 	unsigned int i = 0;
 
 	while (i < nmemb)
 	{
-		array_start = malloc(size);
-		*array_start = 0;
-		array_start++;
+		array[i] = malloc(size);
+		_memset(array[i], 0, nmemb * size);
 		i++;
 	}
 
