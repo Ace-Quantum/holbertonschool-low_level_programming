@@ -1,27 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void *_calloc(unsigned int nmeb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int nnmeb = (int)nmeb;
-	int ssize = (int)size;
+	void *array;
+	void *array_start;
 	int i = 0;
 
-	char *array = malloc(nmeb * size);
+	array = malloc(nmemb * size);
 
-	while (i < nnmeb)
+	while (i < size)
 	{
-		array[i] = 0;
+		array_start = malloc(size);
+		array_start = 0;
+		array[i] = array_start;
+		array_start ++;
 		i++;
 	}
 
-	i = 0;
-
-	while (i < nnmeb)
-	{
-		array[i] = malloc(ssize);
-		i++;
-	}
-
-	return (array);
+	return (array)
 }
