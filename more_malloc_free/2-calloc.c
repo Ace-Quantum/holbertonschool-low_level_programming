@@ -9,7 +9,7 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 
 	void *array;
 
-	for (i <= nnmeb)
+	while (i <= nnmeb)
 	{
 		array[i] = malloc(ssize);
 		i++;
