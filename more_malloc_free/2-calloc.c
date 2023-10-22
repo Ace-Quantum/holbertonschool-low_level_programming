@@ -7,7 +7,7 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 	int ssize = (int)size;
 	int i = 0;
 
-	void *array = malloc(nmeb * size);
+	char *array = malloc(nmeb * size);
 
 	while (i < nnmeb)
 	{
@@ -22,14 +22,6 @@ void *_calloc(unsigned int nmeb, unsigned int size)
 		array[i] = malloc(ssize);
 		i++;
 	}
-
-	//i = 0;
-
-	//while (i <nnmeb)
-	//{
-		//array[i] = 0;
-		//i++;
-	//}
 
 	return (array);
 }
