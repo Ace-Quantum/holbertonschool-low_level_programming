@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * I think this is what I was trying to do with calloc
+ * alloc_grid - I think this is what I was trying to do with calloc
  * @width: the width of the array
  * @height: the height of the array
  * Return: return the array
