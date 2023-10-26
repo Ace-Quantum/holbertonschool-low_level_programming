@@ -4,4 +4,3 @@
 	} else { \
 		return x; \
 	}
-#endif
