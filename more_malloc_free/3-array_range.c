@@ -9,7 +9,7 @@ int *array_range(int min, int max)
 	j = min;
 	diff = (max - min);
 
-	if (diff <= 0)
+	if (diff <= 1)
 		return (NULL);
 
 	new_array = malloc((diff + 1) * sizeof(int));
