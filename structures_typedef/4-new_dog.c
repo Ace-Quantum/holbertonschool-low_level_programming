@@ -1,5 +1,7 @@
 #include "dog.h"
 #include "strdup.c"
+#include <stdio.h>
+#include <stdlib.h>
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -12,10 +14,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	(*ndog).name = _strdup(name);
 	(*ndog).owner = _strdup(owner);
-	(*ndog).age = age;
 
 	if ((*ndog).name == NULL || (*ndog).owner == NULL)
+	{
+		free(ndog);
 		return (NULL);
+	}
+
+	(*ndog).age = age;
 
 	return (ndog);
 }
