@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * _strlen - starting point of the function, determines length of a string
  *
