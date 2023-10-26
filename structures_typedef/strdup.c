@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "_strlen.c"
+#include "main.h"
 
 /**
  * _strdup - duplicates a string
