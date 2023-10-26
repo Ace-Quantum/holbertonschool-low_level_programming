@@ -4,6 +4,6 @@
 
 void print_dog(struct dog *d)
 {
-	d(void);
+	d = NULL;
 	return;
 }
