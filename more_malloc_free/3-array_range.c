@@ -7,7 +7,7 @@ int *array_range(int min, int max)
 	int i, j, diff;
 
 	j = min;
-	diff = (max - min);
+	diff = (max - min + 1);
 
 	new_array = malloc(diff * sizeof(int));
 
