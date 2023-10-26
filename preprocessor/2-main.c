@@ -2,6 +2,6 @@
 
 int main()
 {
-	printf("%s", _FILE_);
+	printf("%s", FILE);
 	return (0);
 }
