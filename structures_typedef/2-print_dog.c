@@ -4,6 +4,7 @@
 
 void print_dog(struct dog *d)
 {
-	d = NULL;
+	char *ptr;
+	ptr = &d;
 	return;
 }
