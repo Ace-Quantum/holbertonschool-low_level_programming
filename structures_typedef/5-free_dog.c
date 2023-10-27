@@ -6,7 +6,7 @@ void free_dog(dog_t *d)
 {
 	free((*d).name);
 	free((*d).owner);
-	(*d).age = NULL;
+	(*d).age = 0;
 	free(d);
 	return;
 }
