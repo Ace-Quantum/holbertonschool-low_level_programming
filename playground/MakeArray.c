@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
+//*here is a note/
+
 int main()
 {
 	int MyArray[7];
