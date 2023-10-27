@@ -4,6 +4,7 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
     int test;
+    int i = 0;
 
     if (size == 0)
         return (-1);
