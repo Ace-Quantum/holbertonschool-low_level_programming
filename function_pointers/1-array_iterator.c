@@ -7,9 +7,9 @@ void array_iterator(int *array, size_t size, void (*action)(int))
     int i = 0;
     int j = (int)size;
 
-    if (array == NULL || size == NULL)
+    if (array == NULL || action == NULL)
         return;
-    
+
     while (i < j)
     {
         (*action)(array[i]);
