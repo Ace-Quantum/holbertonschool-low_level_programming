@@ -1,5 +1,6 @@
 #include "dog.h"
-#include "strdup.c"
+#include "strcpy.c"
+#include "_strlen.c"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,15 +13,26 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (ndog == NULL)
 		return (NULL);
 
-	(*ndog).name = _strdup(name);
-	(*ndog).owner = _strdup(owner);
+	(*ndog).name = malloc(_strlen(name) + 1);
 
-	if ((*ndog).name == NULL || (*ndog).owner == NULL)
+	if ((*ndog).name == NULL)
 	{
+		free((*ndog).name);
 		free(ndog);
 		return (NULL);
 	}
 
+	(*ndog).owner = malloc(_strlen(owner) + 1);
+
+	if ((*ndog).owner == NULL)
+	{
+		free((*ndog).owner);
+		free(ndog);
+		return (NULL);
+	}
+
+	(*ndog).name = _strcpy((*ndog).name, name);
+	(*ndog).owner = _strcpy((*ndog).owner, owner);
 	(*ndog).age = age;
 
 	return (ndog);
