@@ -5,17 +5,16 @@
 
 int main(int argc, char **argv)
 {
-    int result, a, b;
+    int (*process_nums)(int, int);
 
-    a = atoi(argv[1]);
-    b = atoi(argv[3]);
+    oprt = get_op_func(argv[2]);
 
     if (argc != 4)
     {
         printf("Error98\n");
         exit(98);
     }
-    else if (strlen(argv[2]) > 1)
+    else if (!process_nums)
     {
         printf("Error99\n");
         exit(99);
@@ -27,7 +26,7 @@ int main(int argc, char **argv)
     }
     else
     {
-        result = get_op_func(argv[2])(a, b);
+        result = get_op_func(atoi(argv[2]), atoi(argv[3]));
         printf ("%i", result);
         return (0);
     }
