@@ -27,8 +27,7 @@ int main(int argc, char **argv)
     }
     else
     {
-        result = process_nums(atoi(argv[2]), atoi(argv[3]));
-        printf ("%i", result);
+        printf("%d\n", process_nums(atoi(argv[2]), atoi(argv[3]));
         return (0);
     }
 }
