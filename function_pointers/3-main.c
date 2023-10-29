@@ -5,7 +5,6 @@
 int main(int argc, char **argv)
 {
     int i, result, a, b;
-    int op_func(char *)(int, int) = &get_op_func;
 
     a = atoi(argv[1]);
     b = atoi(argv[3]);
@@ -27,7 +26,7 @@ int main(int argc, char **argv)
     }
     else
     {
-        result = op_func(argc[2])(a, b);
+        result = get_op_func(argc[2])(a, b);
         printf ("%i", result);
         return;
     }
