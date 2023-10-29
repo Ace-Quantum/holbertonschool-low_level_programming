@@ -10,7 +10,7 @@ int main(int argc, char **argv)
     a = atoi(argv[1]);
     b = atoi(argv[3]);
 
-    if (argc > 4)
+    if (argc > 3)
     {
         printf("Error98\n");
         exit(98);
