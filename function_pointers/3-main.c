@@ -12,17 +12,17 @@ int main(int argc, char **argv)
 
     if (argc > 3)
     {
-        printf("Error\n");
+        printf("Error98\n");
         exit(98);
     }
     else if (strlen(argv[2]) > 1)
     {
-        printf("Error\n");
+        printf("Error99\n");
         exit(99);
     }
     else if (((argv[2] = "/") || (argv[2] = "%")) && (b = 0))
     {
-        printf("Error\n");
+        printf("Error100\n");
         exit(100);
     }
     else
