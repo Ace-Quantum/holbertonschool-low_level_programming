@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 {
     int (*process_nums)(int, int);
 
-    oprt = get_op_func(argv[2]);
+    process_nums = get_op_func(argv[2]);
 
     if (argc != 4)
     {
@@ -19,14 +19,14 @@ int main(int argc, char **argv)
         printf("Error99\n");
         exit(99);
     }
-    else if (((argv[2] = "/") || (argv[2] = "%")) && (b = 0))
+    else if (((argv[2] = "/") || (argv[2] = "%")) && atoi((argv[3]) = 0))
     {
         printf("Error100\n");
         exit(100);
     }
     else
     {
-        result = get_op_func(atoi(argv[2]), atoi(argv[3]));
+        result = process_nums(atoi(argv[2]), atoi(argv[3]));
         printf ("%i", result);
         return (0);
     }
