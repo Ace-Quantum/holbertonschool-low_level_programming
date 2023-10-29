@@ -11,15 +11,19 @@ int main(int argc, char **argv)
 
     if (argc != 4)
     {
-        printf("Error98\n");
+        printf("Error\n");
         exit(98);
     }
     else if (!process_nums)
     {
-        printf("Error99\n");
+        printf("Error\n");
         exit(99);
     }
-
+    else if (((argv[2] = "/") || (argv[2] = "%")) && atoi((argv[3]) = 0))
+    {
+        printf("Error\n");
+        exit(100);
+    }
     else
     {
         printf("%d\n", process_nums(atoi(argv[1]), atoi(argv[3])));
