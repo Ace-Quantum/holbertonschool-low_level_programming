@@ -5,12 +5,10 @@
 int main(int argc, char **argv)
 {
     int i, result, a, b;
-    int (* op_func (char *))(int, int);
+    int (* op_func (char *))(int, int) = &get_op_func;
 
     a = atoi(argv[1]);
     b = atoi(argv[3]);
-
-    op_func = &get_op_func;
 
     if (argc > 3)
     {
