@@ -15,6 +15,7 @@ int (*get_op_func(char *s))(int a, int b)
     };
 
     int i;
+    int result;
 
     i = 5;
 
