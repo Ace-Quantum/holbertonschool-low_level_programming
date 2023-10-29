@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "3-calc.h"
 
-int main(argc, argv)
+int main(int argc, char *argv)
 {
     int i, result, a, b;
     int (*op_func(*char))(int, int);
