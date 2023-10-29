@@ -15,7 +15,7 @@ int main(int argc, char **argv)
         printf("Error\n");
         exit(98);
     }
-    else if (strlen(argc[2]) > 1)
+    else if (strlen(argv[2]) > 1)
     {
         printf("Error\n");
         exit(99);
