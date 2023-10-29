@@ -23,6 +23,6 @@ int (*get_op_func(char *s))(int a, int b)
     {
         if (strcmp(s, ops[i].op)== 0)
             result = (ops[i].f);
-        i--
+        i--;
     }
 }
