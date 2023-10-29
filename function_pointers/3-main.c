@@ -5,7 +5,7 @@
 
 int main(int argc, char **argv)
 {
-    int i, result, a, b;
+    int result, a, b;
 
     a = atoi(argv[1]);
     b = atoi(argv[3]);
