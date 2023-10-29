@@ -6,7 +6,6 @@
 int main(int argc, char **argv)
 {
     int (*process_nums)(int, int);
-    int return;
 
     process_nums = get_op_func(argv[2]);
 
