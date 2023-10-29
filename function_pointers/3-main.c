@@ -20,14 +20,14 @@ int main(int argc, char **argv)
         printf("Error\n");
         exit(99);
     }
-    else if ((argc[2] = "/") || (argc[2] = "%") && (b = 0))
+    else if ((argv[2] = "/") || (argv[2] = "%") && (b = 0))
     {
         printf("Error\n");
         exit(100);
     }
     else
     {
-        result = get_op_func(argc[2])(a, b);
+        result = get_op_func(argv[2])(a, b);
         printf ("%i", result);
         return;
     }
