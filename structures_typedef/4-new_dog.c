@@ -6,10 +6,12 @@
 
 /**
 * new_dog - a new dog to add
-* 
+*
 * @name: name of dog
 * @age: age of dog
 * @owner: owner of dog
+*
+* Return: the pointer to the new dog
 */
 
 dog_t *new_dog(char *name, float age, char *owner)
