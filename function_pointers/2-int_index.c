@@ -6,6 +6,7 @@
 * @array: the index to initialize
 * @size: the size of the array
 * @cmp: the comparison
+* Return: return the number where the initialization stops
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -21,9 +22,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 		test = (*cmp)(array[i]);
 
 		if (test != 0)
-			return(i);
-		else
-			i++;
+			return (i);
+
+		i++;
 	}
 
 	return (-1);
