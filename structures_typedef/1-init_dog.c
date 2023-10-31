@@ -4,7 +4,7 @@
 
 /**
 * init_dog - beginning of the program
-* 
+*
 * @d: the dogs
 * @name: name for dog
 * @age: age for dog
