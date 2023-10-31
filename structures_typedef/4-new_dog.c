@@ -4,6 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* new_dog - a new dog to add
+* 
+* @name: name of dog
+* @age: age of dog
+* @owner: owner of dog
+*/
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *ndog;
