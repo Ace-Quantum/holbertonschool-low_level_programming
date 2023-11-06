@@ -10,6 +10,12 @@
  * Return: return a pointer to the point where the pointer points
  */
 
+/*** this is Ace of the future
+ * note your code kids
+ * and do it well
+ * because those notes were utterly useless during the printf project
+*/
+
 char *_strpbrk(char *s, char *accept)
 {
 	char *r = '\0';
