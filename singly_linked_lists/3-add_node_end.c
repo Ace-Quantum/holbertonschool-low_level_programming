@@ -10,22 +10,23 @@ list_t *add_node_end(list_t **head, const char *str)
 
     new_node = malloc(sizeof(list_t));
 
-    printf("no seg fault here 1");
     if (new_node == NULL)
         return (NULL);
 
-    printf("no seg fault here 2");
     (*new_node).str = strdup(str);
     (*new_node).len = strlen(str);
     (*new_node).next = NULL;
 
-    printf("no seg fault here 3");
-    temp_node = *head;
+    if (*head == NULL)
+        *head = new_node;
+    else
+    {
+        temp_node = *head;
 
-    while ((*temp_node).next != NULL)
-        temp_node = (*temp_node).next;
+        while ((*temp_node).next != NULL)
+            temp_node = (*temp_node).next;
+    }
 
-    printf("no seg fault here 4");
     (*temp_node).next = new_node;
 
     return(new_node);
