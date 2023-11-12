@@ -17,7 +17,7 @@ void free_list(list_t *head)
         {
             leader = (*head).next;
             free((*freer).str);
-            free((*freer).len);
+            /*free((*freer).len);*/
             free((*freer).next);
             free(freer);
             freer = leader;
