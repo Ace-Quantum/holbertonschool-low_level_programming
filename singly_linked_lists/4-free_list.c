@@ -5,15 +5,14 @@
 
 void free_list(list_t *head)
 {
-    list_t *leader;
+    list_t *leader = head;
     list_t *freer;
 
     if (head != NULL && (*head).next != NULL)
     {
-        leader = head;
         freer = head;
 
-        while (head != NULL)
+        while ((*head).next != NULL)
         {
             leader = (*head).next;
             free((*freer).str);
@@ -23,4 +22,5 @@ void free_list(list_t *head)
             freer = leader;
         }
     }
+    free(leader);
 }
