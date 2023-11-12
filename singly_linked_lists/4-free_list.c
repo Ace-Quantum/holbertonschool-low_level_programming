@@ -12,7 +12,7 @@ void free_list(list_t *head)
 
     while (leader != NULL)
     {
-        leader = (*head).next;
+        leader = (*leader).next;
         free((*freer).str);
         /*free((*freer).len);*/
         free((*freer).next);
