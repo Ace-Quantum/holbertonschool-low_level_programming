@@ -8,19 +8,15 @@ void free_list(list_t *head)
     list_t *leader = head;
     list_t *freer;
 
-    if (head != NULL && (*head).next != NULL)
-    {
-        freer = head;
+    freer = head;
 
-        while (leader != NULL)
-        {
-            leader = (*head).next;
-            free((*freer).str);
-            /*free((*freer).len);*/
-            free((*freer).next);
-            free(freer);
-            freer = leader;
-        }
+    while (leader != NULL)
+    {
+        leader = (*head).next;
+        free((*freer).str);
+        /*free((*freer).len);*/
+        free((*freer).next);
+        free(freer);
+        freer = leader;
     }
-    free(leader);
 }
