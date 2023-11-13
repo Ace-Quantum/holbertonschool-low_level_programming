@@ -10,7 +10,7 @@ int pop_listint(listint_t **head)
 
     data = (*temp_node).n;
 
-    temp_node = (*head).next;
+    temp_node = (**head).next;
 
     free(*head);
 
