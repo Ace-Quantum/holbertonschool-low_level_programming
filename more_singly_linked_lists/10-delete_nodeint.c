@@ -23,7 +23,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
         }
         counter++;
         leader = (*leader).next;
-        freer = (*freer).next
+        freer = (*freer).next;
     }
     return (-1);
 }
