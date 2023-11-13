@@ -6,9 +6,15 @@ int pop_listint(listint_t **head)
 {
     int data;
 
-    data = (**head).n;
+    listint_t temp_node = *head;
 
-    *head = NULL;
+    data = (*temp_node).n;
+
+    temp_node = (*head).next;
+
+    free(*head);
+
+    *head = temp_node;
 
     return(data);
 }
