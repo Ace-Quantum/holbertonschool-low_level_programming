@@ -5,8 +5,9 @@
 int pop_listint(listint_t **head)
 {
     int data;
+    listint_t *temp_node = *head;
 
-    data = (*head).n;
+    data = (*temp_node).n;
 
     *head = NULL;
 
