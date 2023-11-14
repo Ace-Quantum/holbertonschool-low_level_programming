@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+#include "2-add_nodeint.c"
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -14,6 +15,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
         return (NULL);
 
     (*new_node).n = n;
+
+    if (idx == 0)
+        add_nodeint(&head, n);
+
 
     while (tracker_node != NULL)
     {
