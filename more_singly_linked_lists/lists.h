@@ -34,4 +34,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index);
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 
+int sum_listint(listint_t *head);
 #endif
