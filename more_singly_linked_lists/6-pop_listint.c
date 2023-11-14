@@ -15,6 +15,7 @@ int pop_listint(listint_t **head)
 
 	if (*head == NULL)
 		return (0);
+
 	data = (*temp_node).n;
 
 	temp_node = (**head).next;
@@ -23,5 +24,5 @@ int pop_listint(listint_t **head)
 
 	*head = temp_node;
 
-	return(data);
+	return (data);
 }
