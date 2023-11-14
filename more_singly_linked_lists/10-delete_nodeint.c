@@ -28,12 +28,12 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	leader = *head;
 
-	while (i != index - 1)
+	while (counter != index - 1)
 	{
 		if (leader == NULL)
 			return (-1);
 		leader = (*leader).next;
-		i++;
+		counter++;
 	}
 
 	freer = (*leader).next;
