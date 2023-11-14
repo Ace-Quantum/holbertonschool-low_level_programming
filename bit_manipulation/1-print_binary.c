@@ -10,14 +10,14 @@ void print_binary(unsigned long int n)
 	int digit_tracker = 0;
 	unsigned long int number_tracker = n;
 
+	if (digit_tracker < 0)
+		putchar('0');
+
 	while (number_tracker)
 	{
 		number_tracker = number_tracker >> 1;
 		digit_tracker++;
 	}
-
-	if (digit_tracker < 0)
-		putchar('0');
 
 	while (digit_tracker > 0)
 	{
