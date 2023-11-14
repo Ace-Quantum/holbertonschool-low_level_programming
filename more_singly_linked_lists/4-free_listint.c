@@ -3,8 +3,8 @@
 #include "lists.h"
 
 /**
- * free_list- free me
- * @h: from this prison
+ * free_listint- free me
+ * @head: from this prison
 */
 void free_listint(listint_t *head)
 {
