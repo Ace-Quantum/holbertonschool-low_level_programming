@@ -17,8 +17,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
     (*new_node).n = n;
 
     if (idx == 0)
-        add_nodeint(&head, n);
-
+    {
+        (*new_node).next = *head;
+        return (new_node);
+    }
 
     while (tracker_node != NULL)
     {
