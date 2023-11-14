@@ -22,7 +22,7 @@ void print_binary(unsigned long int n)
 	while (digit_tracker > 0)
 	{
 		number_tracker = n >> --digit_tracker;
-		if (number_tracker & 1 > 0)
+		if ((number_tracker & 1) > 0)
 			putchar('1');
 		else
 			putchar('0');
