@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "lists.h"
 
-/***
- * print_list- starting point of the code
+/**
+ * print_list - starting point of the code
  * @h: head
  *
  * Return: the number of nodes
