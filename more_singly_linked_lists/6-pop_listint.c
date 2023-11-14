@@ -2,19 +2,27 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * pop_listint- start
+ * @head: head
+ * Return: the number
+*/
 int pop_listint(listint_t **head)
 {
-    int data;
+	int data;
 
-    listint_t *temp_node = *head;
+	if (*head == NULL)
+		return (0);
 
-    data = (*temp_node).n;
+	listint_t *temp_node = *head;
 
-    temp_node = (**head).next;
+	data = (*temp_node).n;
 
-    free(*head);
+	temp_node = (**head).next;
 
-    *head = temp_node;
+	free(*head);
 
-    return(data);
+	*head = temp_node;
+
+	return(data);
 }
