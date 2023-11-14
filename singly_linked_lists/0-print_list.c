@@ -2,11 +2,12 @@
 #include "lists.h"
 
 /***
- * print_list - starting point of the code
+ * print_list- starting point of the code
  * @h: head
- * 
+ *
  * Return: the number of nodes
 */
+
 size_t print_list(const list_t *h)
 {
 	size_t len;
