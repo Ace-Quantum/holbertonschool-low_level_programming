@@ -10,9 +10,11 @@ void free_dlistint(dlistint_t *head)
 {
     dlistint_t *freer = head;
 
-    while (freer != NULL)
+    while ((*freer).next != NULL)
     {
         freer = (*freer).next;
         free((*freer).prev);
     }
+
+    free(freer);
 }
