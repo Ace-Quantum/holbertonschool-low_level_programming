@@ -6,6 +6,7 @@
  * flip_bits- returns how many bits are different than each other
  * @n: comp num 1
  * @m: comp num 2
+ * Return: amount of flips
 */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
