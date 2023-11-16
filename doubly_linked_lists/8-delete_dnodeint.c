@@ -34,7 +34,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
     if ((*freer).next != NULL)
     {
         (*leader).next = (*freer).next;
-        leader->next->prev = leader
+        leader->next->prev = leader;
     }
     else
         leader->next = NULL;
