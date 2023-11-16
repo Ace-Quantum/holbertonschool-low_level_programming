@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 
-dlistint_t *insert_dnodeint_at_index(dlist_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 {
     unsigned int i = 0;
     dlistint_t *new_node;
