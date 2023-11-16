@@ -3,58 +3,54 @@
 #include "lists.h"
 
 /**
- * I got some advice from chatgpt about how to eliminate the need for a second tracker
- * so that I may be able to preserve the previous pointer later. 
- * hence why this code may look a little advanced, I'm happy chatgpt gave me this little trick
- * I think it'll come in handy with hash tables
- * so with that being said, I'll be giving up dot notation now.
+ * insert_dnodeint_at_index- inset a node at a specific spot
+ * @h: the head of the list
+ * @idx: the index at which to insert
+ * @n: the data the new node should hold
 */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 {
-    unsigned int i = 0;
-    dlistint_t *new_node;
-    dlistint_t *tracker_node = *head;
+	unsigned int i = 0;
+	dlistint_t *new_node;
+	dlistint_t *tracker_node = *head;
 
-    new_node = malloc(sizeof(dlistint_t));
+	new_node = malloc(sizeof(dlistint_t));
 
-    if (new_node == NULL)
-        return (NULL);
+	if (new_node == NULL)
+		return (NULL);
 
-    (*new_node).n = n;
+	(*new_node).n = n;
 
-    if (idx == 0)
-    {
-        (*new_node).next = *head;
-        (*new_node).prev = NULL;
-        if (*head != NULL)
-            (*head)->prev = new_node;
-        *head = new_node;
-        return (new_node);
-    }
+	if (idx == 0)
+	{
+		(*new_node).next = *head;
+		(*new_node).prev = NULL;
+		if (*head != NULL)
+			(*head)->prev = new_node;
+		*head = new_node;
+		return (new_node);
+	}
 
-    /**whiteboard this code during betty break*/
-    while (tracker_node != NULL && i < idx - 1)
-    {
-        i++;
-        tracker_node = (*tracker_node).next;
-    }
+	while (tracker_node != NULL && i < idx - 1)
+	{
+		i++;
+		tracker_node = (*tracker_node).next;
+	}
 
-    if (tracker_node == NULL)
-    {
-        free(new_node);
-        return (NULL);
-    }
+	if (tracker_node == NULL)
+	{
+		free(new_node);
+		return (NULL);
+	}
 
-    /**end whiteboard*/
+	(*new_node).next = (*tracker_node).next;
 
-    (*new_node).next = (*tracker_node).next;
+	if (tracker_node->next != NULL)
+		tracker_node->next->prev = new_node;
 
-    if (tracker_node->next != NULL)
-        tracker_node->next->prev = new_node;
+	new_node->prev = tracker_node;
+	tracker_node->next = new_node;
 
-    new_node->prev = tracker_node;
-    tracker_node->next = new_node;
-
-    return (new_node);
+	return (new_node);
 }
