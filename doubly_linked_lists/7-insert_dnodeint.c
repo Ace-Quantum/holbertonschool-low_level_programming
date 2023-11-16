@@ -33,17 +33,20 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
         return (new_node);
     }
 
+    /**whiteboard this code during betty break*/
     while (tracker_node != NULL && i < idx - 1)
     {
         i++;
         tracker_node = (*tracker_node).next;
     }
 
-    if ((*tracker_node).next == NULL)
+    if (*tracker_node == NULL)
     {
         free(new_node);
         return (NULL);
     }
+
+    /**end whiteboard*/
 
     (*new_node).next = (*tracker_node).next;
 
