@@ -12,7 +12,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
         if (i == index)
             return (tracker_node);
         tracker_node = (*tracker_node).next;
-        i++
+        i++;
     }
     return (NULL);
 }
