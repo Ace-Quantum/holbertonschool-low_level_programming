@@ -25,6 +25,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
     while (counter != index - 1)
     {
+        if (leader == NULL)
+            return (-1);
         leader = (*leader).next;
         counter++;
     }
