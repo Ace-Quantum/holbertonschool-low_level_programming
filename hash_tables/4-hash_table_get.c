@@ -7,7 +7,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
     unsigned long int hash_key;
     hash_node_t* temp_node;
-    int i = 0;
+    /**int i = 0;**/
 
     hash_key = key_index((const unsigned char *)key, ht->size);
 
