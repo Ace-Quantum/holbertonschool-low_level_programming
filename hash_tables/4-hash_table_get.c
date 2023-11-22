@@ -11,6 +11,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
     while (tracker != NULL)
     {
+        printf("key: %s value: %s", tracker->key, tracker->value);
         if (tracker->key == key)
             return (tracker->value);
         tracker++;
