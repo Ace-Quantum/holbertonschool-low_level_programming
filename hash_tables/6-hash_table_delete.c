@@ -4,7 +4,6 @@
 
 void hash_table_delete(hash_table_t *ht)
 {
-    hash_node_t *tracker_node;
     hash_node_t *temp_node;
     unsigned long int i = 0;
 
