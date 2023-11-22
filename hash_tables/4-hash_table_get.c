@@ -19,8 +19,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
         printf("%d iteration: key: %s, val %s\n", i, temp_node->key, temp_node->value);
         i++;
         if (temp_node->key == key)
+        {
             printf("true");
             return (temp_node->value);
+        }
         temp_node = temp_node->next;
     }
 
