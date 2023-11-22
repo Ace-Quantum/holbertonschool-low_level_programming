@@ -11,6 +11,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
     temp_node = ht->array[hash_key];
 
+    printf("key: %s, val: %s", temp_node->key, temp_node->value);
+    
     while (temp_node != NULL)
     {
         if (temp_node->key == key)
