@@ -9,7 +9,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
     /**hash_val = key_index((const unsigned char *)key, ht->size);**/
 
-    while (tracker != NULL)
+    while (*tracker != NULL)
     {
         printf("key: %s value: %s", tracker->key, tracker->value);
         if (tracker->key == key)
