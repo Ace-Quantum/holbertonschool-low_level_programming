@@ -8,29 +8,29 @@ int binary_search(int *array, size_t size, int value)
     if (array == NULL)
         return (-1);
 
-        while (minidx <= maxidx)
+    while (minidx <= maxidx)
+    {
+        idx = maxidx / 2;
+        printf("Searching in array: ");
+
+        for (i = minidx; i <= maxidx; i++)
         {
-            idx = maxidx / 2;
-            printf("Searching in array: ");
-
-            for (i = minidx; i <= maxidx; i++)
-            {
-                if (i > minidx)
-                    print(", ");
-                printf("%d", array[i]);
-            }
-            printf("\n");
-
-            if (minidx == maxidx && array[idx] != value)
-                return (-1);
-
-            if (array[idx] == value)
-                return (idx);
-
-            if (array[idx] < value)
-                minidx = idx + 1;
-            else
-                maxidx = idx - 1;
+            if (i > minidx)
+                printf(", ");
+            printf("%d", array[i]);
         }
-        return (-1);
+        printf("\n");
+
+        if (minidx == maxidx && array[idx] != value)
+            return (-1);
+
+        if (array[idx] == value)
+            return (idx);
+
+        if (array[idx] < value)
+            minidx = idx + 1;
+        else
+            maxidx = idx - 1;
+    }
+    return (-1);
 }
