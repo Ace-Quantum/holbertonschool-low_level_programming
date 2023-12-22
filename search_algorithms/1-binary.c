@@ -10,7 +10,7 @@ int binary_search(int *array, size_t size, int value)
 
     while (minidx <= maxidx)
     {
-        idx = maxidx / 2;
+        idx = minidx + (maxidx - minidx) / 2;
         printf("Searching in array: ");
 
         for (i = minidx; i <= maxidx; i++)
